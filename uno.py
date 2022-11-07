@@ -1,4 +1,5 @@
 import random
+import sys  # library fo exit
 import time
 
 color = ('RED', 'GREEN', 'BLUE', 'YELLOW')
@@ -128,8 +129,9 @@ def last_card_check(hand):
             return False
 
 
+status = True
 # The gaming loop
-while True:
+while status:
 
     print('Welcome to UNO! Finish your cards first to win')
 
@@ -167,7 +169,9 @@ while True:
                     print('Your cards: ')
                     player_hand.cards_in_hand()
             choice = input("\nHit or Pull? (h/p): ")
-            if choice == 'h':
+            if choice == 'q':  # add try to exit for user
+                sys.exit()
+            elif choice == 'h':
                 pos = int(input('Enter index of card: '))
                 temp_card = player_hand.single_card(pos)
                 if single_card_check(top_card, temp_card):
