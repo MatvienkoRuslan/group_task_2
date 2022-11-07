@@ -129,9 +129,8 @@ def last_card_check(hand):
             return False
 
 
-status = True
 # The gaming loop
-while status:
+while True:
 
     print('Welcome to UNO! Finish your cards first to win')
 
