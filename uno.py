@@ -269,7 +269,7 @@ while True:
                 if single_card_check(top_card, temp_card):
                     print(f'PC throws: {temp_card}')
                     time.sleep(1)
-                    if temp_card.cardtype == 'number':
+                    if temp_card.cardtype == 'Number':
                         top_card = temp_card
                         turn = 'Player'
                     else:
