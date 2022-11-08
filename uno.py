@@ -218,7 +218,7 @@ while True:
                     player_hand.add_card(temp_card)
                     turn = 'Pc'
             if win_check(player_hand):
-                print('\nPLAYER WON!!')
+                print('\nPLAYER WON VERY GOOD!!')
                 playing = False
                 break
 
